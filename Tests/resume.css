@@ -1,0 +1,20 @@
+h1{font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    padding: 10px;
+     }
+header{
+    color: whitesmoke;
+    text-align: center;
+    background-color:rgb(255, 230, 0);
+}
+section{
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: greyscale(95%);
+}
