@@ -22,3 +22,10 @@ body {
         background-color: rgba(200, 200, 200, 0.842);
         
     }
+    div{
+        color: blue;
+        font-size: 20px;
+        text-align: justify;
+        background-color: rgba(150, 150, 150, 0.842);
+        margin: 20px;
+        padding: 15px;}
