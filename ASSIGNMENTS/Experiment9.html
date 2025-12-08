@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Product Grid</title> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #f5f5f5; 
+      padding: 20px; 
+    } 
+ 
+    h1 { 
+      text-align: center; 
+      font: italic;
+      font-style: italic;
+      padding: 20px;
+      margin-bottom: 20px; 
+      color: whitesmoke;
+      background-color: rgb(243, 172, 90);
+      border: 1px solid black;
+    } 
+ 
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px; 
+    } 
+ 
+    .card { 
+      background: rgb(243, 172, 90); 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 16px; 
+      text-align: center; 
+      border: 1px solid black;
+    } 
+ 
+    .card img { 
+      width: 100%; 
+      height: 250px; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    } 
+ 
+    .card h2 { 
+      font-size: 18px; 
+      margin: 8px 0; 
+    } 
+ 
+    .card p { 
+      font-size: 14px; 
+      color: #0e0e0e; 
+      margin: 4px 0; 
+    } 
+ 
+    .price { 
+        font-size: 10px;
+        font-style: bold;
+      font-weight: bold; 
+      color: #04dd07; 
+    } 
+    @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 1fr; 
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h1>Shopify</h1> 
+<div class="grid"> 
+    <div class="card"> 
+      <img src="https://th.bing.com/th/id/OIP.PxLh2EpXxfVPfDnnMz6WnwHaEK?w=241&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 1"> 
+      <h2>iphone</h2> 
+      <p>High-quality item with great features.</p> 
+      <p class="price">₹100,000</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <img src="https://th.bing.com/th/id/OIP.O-gRqcByJK1mGi5PGsL57AHaHa?w=182&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 2"> 
+      <h2>Samsung</h2> 
+      <p>Durable and stylish.</p> 
+      <p class="price">₹60,000</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <img  src="https://th.bing.com/th/id/OIP.3UvA4muSJoH3QHUXjR1aIgHaHa?w=175&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 3"> 
+      <h2>Vivo</h2> 
+      <p>Lightweight and flexible</p> 
+      <p class="price">₹15000</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <img src="https://th.bing.com/th/id/OIP.3SI4bnK8Ah39JUyAbMvsmgHaHa?w=154&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 4"> 
+      <h2>Xiaomi</h2> 
+      <p>Trendy design with premium quality.</p> 
+      <p class="price">₹16,000</p> 
+    </div> 
+  </div> 
+</body> 
+</html>
